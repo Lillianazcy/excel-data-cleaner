@@ -42,7 +42,7 @@ def load_address_master():
     candidates = [
         app_dir() / "ken_all.zip",
         Path.cwd() / "ken_all.zip",
-        Path(r"C:\Users\Canyang.Zhuang\Downloads\ken_all.zip"),
+        Path.home() / "Downloads" / "ken_all.zip",
     ]
     zip_path = next((p for p in candidates if p.exists()), None)
     if zip_path:
@@ -711,7 +711,7 @@ def find_sheet_case_insensitive(wb, name: str):
 
 
 def main_customer_sheet(wb):
-    ws = find_sheet_case_insensitive(wb, "CustomersForFilemakerJP")
+    ws = find_sheet_case_insensitive(wb, "CustomerData")
     if ws is not None:
         return ws
     for candidate in wb.worksheets:
