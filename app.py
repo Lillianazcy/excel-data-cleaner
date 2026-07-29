@@ -9,7 +9,7 @@ import customtkinter as ctk
 from processor import STAGE_FUNCTIONS, load_address_master
 
 
-APP_TITLE = "MPM to FM Data cleaner"
+APP_TITLE = "Excel Data Cleaner"
 BG = "#FFF5FA"
 PANEL = "#F4FAFF"
 CARD = "#FFFFFF"
@@ -61,7 +61,7 @@ class CleanerApp(ctk.CTk):
             (3, "Import Check File 2", "Export Check File 3", "Stage 3: Steps 12-14"),
             (4, "Import Check File 3", "Export Check File 4", "Stage 4: Steps 15-25"),
             (5, "Import Check File 4", "Export Check File 5", "Stage 5: Steps 26-31. Add Sheet1 manually after this export."),
-            (6, "Import Check File 5", "Export Final Excel", "Stage 6: Step 32. Updates CustomersForFilemakerJP using Sheet1 lookup."),
+            (6, "Import Check File 5", "Export Final Excel", "Stage 6: Step 32. Updates the destination worksheet using Sheet1 lookup."),
         ]
 
         for stage, import_text, export_text, desc in stages:
