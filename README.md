@@ -6,6 +6,10 @@ Excel Data Cleaner is a Python desktop application that automates Excel workbook
 
 This project was developed to streamline repetitive Excel processing tasks and improve workflow efficiency.
 
+## Screenshot
+
+![Excel Data Cleaner](gui-preview.png)
+
 ## Highlights
 
 - Preserves Excel formatting after processing
